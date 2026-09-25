@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Imagen placeholder">
+  <rect width="1600" height="1000" fill="#25272A"/>
+  <path d="M0 760 L420 420 L820 640 L1600 180 V1000 H0 Z" fill="#34383d"/>
+  <text x="800" y="520" text-anchor="middle" fill="#E6E6E6" font-family="Georgia, serif" font-size="36">Video / portada placeholder</text>
+</svg>
