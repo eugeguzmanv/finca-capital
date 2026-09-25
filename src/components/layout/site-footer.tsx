@@ -42,7 +42,7 @@ export function SiteFooter() {
       </div>
       <div className="flex items-center justify-center gap-3 border-t border-white/10 px-5 py-5 text-xs text-paper/40 md:px-8">
         <BrandMark kind="icon" tone="on-dark" alt="" className="h-5" />
-        <span>Finca Capital · Grupo Salomón · SIPRES placeholder · {new Date().getFullYear()}</span>
+        <span>Este sitio se encuentra bajo construcción · Toda la información es para fines ilustrativos · {new Date().getFullYear()}</span>
       </div>
     </footer>
   );
