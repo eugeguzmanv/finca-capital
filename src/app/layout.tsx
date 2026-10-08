@@ -28,7 +28,8 @@ export const metadata: Metadata = {
     default: "Finca Capital",
     template: "%s · Finca Capital",
   },
-  description: "Propuesta de sitio institucional. Textos e imágenes en placeholder.",
+  description:
+    "Estructuramos financiamiento y soluciones de capital de acuerdo con las necesidades y características de cada proyecto.",
   icons: {
     icon: "/brand/icon-gradient.png",
     apple: "/brand/icon-black.png",

@@ -18,10 +18,7 @@ const islandSpring = {
 const ISLAND_RADIUS = 32;
 const OPEN_WIDTH = "min(784px, calc(100vw - 1.5rem))";
 
-const islandLinks = primaryNav.map((item) => ({
-  ...item,
-  short: item.label === "Grupo Salomón" ? "Grupo" : item.label,
-}));
+const islandLinks = primaryNav;
 
 function goToHash(href: string) {
   if (!href.startsWith("/#")) return false;
@@ -136,7 +133,7 @@ export function SiteHeader() {
                   onClick={() => closeAndGo(item.href)}
                   className="text-[13px] font-medium text-ink/70 transition-colors hover:text-ink"
                 >
-                  {item.short}
+                  {item.label}
                 </Link>
               ))}
             </nav>

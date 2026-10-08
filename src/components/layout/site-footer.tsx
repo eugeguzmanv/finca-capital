@@ -9,15 +9,18 @@ export function SiteFooter() {
         <div className="md:col-span-4">
           <BrandMark kind="logo" tone="on-dark" className="h-16" />
           <p className="mt-6 max-w-xs text-sm leading-6 text-paper/65">
-            Texto placeholder de cierre institucional. Correo, teléfono y horarios se confirman en una siguiente fase.
+            Analizamos, estructuramos, conectamos capital, financiamos y damos seguimiento. Correo, teléfono y horarios se confirman en una siguiente fase.
           </p>
+          <ul className="mt-6 space-y-2 text-sm text-paper/70">
+            <li>correo@placeholder.com</li>
+            <li>+52 000 000 0000</li>
+            <li>Horario placeholder</li>
+          </ul>
         </div>
 
         {footerGroups.map((group) => (
           <div key={group.title} className="md:col-span-2">
-            <p className="text-xs tracking-[0.18em] uppercase text-paper/45">
-              {group.title}
-            </p>
+            <p className="text-xs tracking-[0.18em] uppercase text-paper/45">{group.title}</p>
             <ul className="mt-4 space-y-3 text-sm text-paper/80">
               {group.links.map((link) => (
                 <li key={link.href}>
@@ -29,20 +32,13 @@ export function SiteFooter() {
             </ul>
           </div>
         ))}
-
-        <div className="md:col-span-2">
-          <p className="text-xs tracking-[0.18em] uppercase text-paper/45">Contacto</p>
-          <ul className="mt-4 space-y-3 text-sm text-paper/80">
-            <li>correo@placeholder.com</li>
-            <li>+52 000 000 0000</li>
-            <li>Horario placeholder</li>
-            <li>Redes placeholder</li>
-          </ul>
-        </div>
       </div>
       <div className="flex items-center justify-center gap-3 border-t border-white/10 px-5 py-5 text-xs text-paper/40 md:px-8">
         <BrandMark kind="icon" tone="on-dark" alt="" className="h-5" />
-        <span>Este sitio se encuentra bajo construcción · Toda la información es para fines ilustrativos · {new Date().getFullYear()}</span>
+        <span>
+          Este sitio se encuentra bajo construcción · Toda la información es para fines ilustrativos ·{" "}
+          {new Date().getFullYear()}
+        </span>
       </div>
     </footer>
   );

@@ -9,7 +9,7 @@ export function MobileCta() {
         className="flex h-12 items-center justify-center gap-2 rounded-full bg-ink text-sm font-medium text-paper"
       >
         <BrandMark kind="icon" tone="on-dark" alt="" className="h-4" />
-        Solicitar información
+        Solicitar financiamiento
       </Link>
     </div>
   );

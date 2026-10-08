@@ -1,27 +1,27 @@
 import { AboutSection } from "@/components/home/about-section";
 import { BlogPreview } from "@/components/home/blog-preview";
+import { CapitalPreview } from "@/components/home/capital-preview";
 import { ClosingCta } from "@/components/home/closing-cta";
-import { EvaluationTeaser } from "@/components/home/evaluation-teaser";
-import { GroupSection } from "@/components/home/group-section";
 import { HeroSection } from "@/components/home/hero-section";
+import { ModelPreview } from "@/components/home/model-preview";
 import { ProjectsSection } from "@/components/home/projects-section";
-import { TestimonialsSection } from "@/components/home/testimonials-section";
-import { TransparencySection } from "@/components/home/transparency-section";
-import { TrustStrip } from "@/components/home/trust-strip";
-import { VideoStorySection } from "@/components/home/video-story-section";
+import { RespaldoSection } from "@/components/home/respaldo-section";
+import { SolutionsPreview } from "@/components/home/solutions-preview";
+import { VisionSection } from "@/components/home/vision-section";
+import { WhySection } from "@/components/home/why-section";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <TrustStrip />
+      <WhySection />
       <AboutSection />
-      <GroupSection />
+      <VisionSection />
+      <SolutionsPreview />
+      <ModelPreview />
+      <RespaldoSection />
       <ProjectsSection />
-      <TestimonialsSection />
-      <VideoStorySection />
-      <TransparencySection />
-      <EvaluationTeaser />
+      <CapitalPreview />
       <BlogPreview />
       <ClosingCta />
     </main>

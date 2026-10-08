@@ -8,11 +8,11 @@ import { PlaceholderMedia } from "@/components/ui/placeholder-media";
 
 const categories: Array<"Todas" | PostCategory> = [
   "Todas",
-  "Historia",
   "Avances",
-  "Eventos",
-  "Educación",
-  "Transparencia",
+  "Operaciones",
+  "Cierres",
+  "Aperturas",
+  "Logros",
 ];
 
 export default function BlogPage() {
@@ -29,9 +29,9 @@ export default function BlogPage() {
       <section className="mx-auto max-w-6xl px-5 md:px-8">
         <BrandMark kind="logo" tone="accent" className="mb-6 h-14" />
         <p className="text-xs tracking-[0.22em] uppercase text-ink/45">Centro de noticias</p>
-        <h1 className="font-heading mt-3 text-4xl text-ink md:text-6xl">Blog placeholder</h1>
+        <h1 className="font-heading mt-3 text-4xl text-ink md:text-6xl">Noticias</h1>
         <p className="mt-4 max-w-2xl text-base leading-7 text-ink/65">
-          Introducción editorial placeholder. Fundación, avances, encuentros y contenidos educativos.
+          Avances, nuevas operaciones, cierres financieros, apertura de proyectos y logros corporativos.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-2">

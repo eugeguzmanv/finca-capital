@@ -10,10 +10,10 @@ export function BlogPreview() {
   const preview = posts.slice(0, 3);
 
   return (
-    <section id="actualidad" className="scroll-mt-28 bg-[#efece6] py-20 md:py-28">
+    <section id="noticias" className="scroll-mt-28 bg-paper py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <SectionHeading kicker="Actualidad" title="Vista previa del blog" />
+          <SectionHeading kicker="Noticias" title="Avances, operaciones, cierres y logros" />
           <Link href="/blog" className="text-sm font-medium text-ink underline-offset-4 hover:underline">
             Ver archivo completo
           </Link>

@@ -8,6 +8,9 @@ import Noise from "@/components/Noise";
 import SplitText from "@/components/SplitText";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 
+const headline =
+  "Conectamos proyectos y capital mediante estructuras financieras claras y estratégicas.";
+
 export function HeroSection() {
   const reduced = usePrefersReducedMotion();
 
@@ -23,25 +26,22 @@ export function HeroSection() {
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-end px-5 pt-28 pb-16 md:justify-center md:px-8 md:pt-32">
         <BrandMark kind="icon" tone="on-dark" className="mb-6 h-10" />
-        <p className="mb-5 text-xs tracking-[0.28em] uppercase text-paper/55">
-          Mensaje principal placeholder
-        </p>
+        <p className="mb-5 text-xs tracking-[0.28em] uppercase text-paper/55">Finca Capital</p>
         {reduced ? (
-          <h1 className="font-heading max-w-4xl text-4xl leading-tight text-paper md:text-7xl">
-            Titular placeholder sobre capital y legado
-          </h1>
+          <h1 className="font-heading max-w-5xl text-3xl leading-tight text-paper md:text-6xl">{headline}</h1>
         ) : (
           <SplitText
-            text="Titular placeholder sobre capital y legado"
+            text={headline}
             tag="h1"
-            className="font-heading max-w-4xl text-left text-4xl leading-tight text-paper md:text-7xl"
+            className="font-heading max-w-5xl text-left text-3xl leading-tight text-paper md:text-6xl"
             textAlign="left"
             splitType="words"
             delay={40}
           />
         )}
         <p className="mt-6 max-w-xl text-base leading-7 text-paper/70 md:text-lg">
-          Párrafo placeholder. El video de presentación y las cifras reales se incorporan en una fase posterior.
+          Estructuramos financiamiento y soluciones de capital de acuerdo con las necesidades y características de cada
+          proyecto.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -50,24 +50,15 @@ export function HeroSection() {
               href="/evaluacion"
               className="inline-flex items-center justify-center rounded-full bg-paper px-6 py-3 text-sm font-medium text-ink"
             >
-              CTA primario placeholder
+              Solicitar financiamiento
             </Link>
           </Magnet>
           <Link
-            href="#proyectos"
+            href="/capital"
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-paper"
           >
-            CTA secundario placeholder
+            Conocer nuestras oportunidades
           </Link>
-        </div>
-
-        <div className="mt-14 max-w-xl overflow-hidden rounded-3xl border border-white/10 bg-black/25">
-          <div className="aspect-video">
-            <div className="flex h-full flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#1b1d20,#33383e)]">
-              <BrandMark kind="icon" tone="on-dark" alt="" className="h-8 opacity-80" />
-              <p className="text-sm tracking-wide text-paper/60">Video con portada placeholder</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

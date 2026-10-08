@@ -11,11 +11,10 @@ export type NavGroup = {
 
 export const primaryNav = [
   { label: "Nosotros", href: "/#nosotros" },
-  { label: "Grupo Salomón", href: "/#grupo" },
-  { label: "Proyectos", href: "/#proyectos" },
-  { label: "Transparencia", href: "/#transparencia" },
-  { label: "Historias", href: "/#historias" },
-  { label: "Blog", href: "/blog" },
+  { label: "Soluciones", href: "/soluciones" },
+  { label: "Modelo", href: "/modelo" },
+  { label: "Capital", href: "/capital" },
+  { label: "Evaluación", href: "/evaluacion" },
 ] as const;
 
 export const siteMap: NavGroup[] = [
@@ -25,53 +24,60 @@ export const siteMap: NavGroup[] = [
     links: [
       { label: "Presentación", href: "/#inicio" },
       { label: "Nosotros", href: "/#nosotros" },
-      { label: "Grupo Salomón", href: "/#grupo" },
+      { label: "Visión", href: "/#vision" },
+      { label: "Soluciones", href: "/#soluciones" },
+      { label: "Modelo", href: "/#modelo" },
+      { label: "Respaldo", href: "/#respaldo" },
       { label: "Proyectos", href: "/#proyectos" },
-      { label: "Historias", href: "/#historias" },
-      { label: "Transparencia", href: "/#transparencia" },
-      { label: "Evaluación", href: "/#evaluacion" },
-      { label: "Blog", href: "/#actualidad" },
-      { label: "Cierre", href: "/#cierre" },
+      { label: "Capital", href: "/#capital" },
+      { label: "Noticias", href: "/#noticias" },
     ],
   },
   {
-    title: "Proyectos",
-    href: "/#proyectos",
+    title: "Soluciones",
+    href: "/soluciones",
     links: [
-      { label: "Todos los proyectos", href: "/#proyectos" },
-      { label: "Amaia", href: "/proyectos/amaia-peninsular" },
-      { label: "Distrito", href: "/proyectos/distrito-lahun" },
-      { label: "Punta", href: "/proyectos/punta-nare" },
-      { label: "Charmont", href: "/proyectos/st-charmont" },
+      { label: "Todas las soluciones", href: "/soluciones" },
+      { label: "Crédito puente", href: "/soluciones#puente" },
+      { label: "Crédito mezzanine", href: "/soluciones#mezzanine" },
+      { label: "Crédito hipotecario", href: "/soluciones#hipotecario" },
+      { label: "Arrendamiento", href: "/soluciones#arrendamiento" },
+      { label: "Factoraje", href: "/soluciones#factoraje" },
+      { label: "Fideicomisos", href: "/soluciones#fideicomiso" },
     ],
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Modelo",
+    href: "/modelo",
     links: [
-      { label: "Archivo", href: "/blog" },
-      { label: "Origen y propósito", href: "/blog/fundacion-y-proposito" },
-      { label: "Avance de obra", href: "/blog/avance-de-obra" },
-      { label: "Encuentro con inversionistas", href: "/blog/encuentro-inversionistas" },
-      { label: "Lectura de horizonte", href: "/blog/lectura-de-horizonte" },
-      { label: "Documentos publicables", href: "/blog/documentos-publicables" },
+      { label: "El modelo", href: "/modelo" },
+      { label: "Proyectos", href: "/modelo#proyectos" },
+      { label: "Estructuración", href: "/modelo#estructuracion" },
+      { label: "Capital", href: "/modelo#capital" },
+      { label: "Financiamiento", href: "/modelo#financiamiento" },
+      { label: "Seguimiento", href: "/modelo#seguimiento" },
     ],
   },
   {
-    title: "Evaluación",
+    title: "Capital",
+    href: "/capital",
+    links: [
+      { label: "Oportunidades", href: "/capital" },
+      { label: "Perfil", href: "/capital#perfil" },
+      { label: "Participación", href: "/capital#participacion" },
+      { label: "Proyectos", href: "/#proyectos" },
+      { label: "Contacto capital", href: "/capital/contacto" },
+    ],
+  },
+  {
+    title: "Contacto",
     href: "/evaluacion",
     links: [
-      { label: "Iniciar flujo", href: "/evaluacion" },
-      { label: "Confirmación", href: "/evaluacion/gracias" },
-    ],
-  },
-  {
-    title: "Legal",
-    href: "/aviso-de-privacidad",
-    links: [
+      { label: "Solicitar financiamiento", href: "/evaluacion" },
+      { label: "Contacto para capital", href: "/capital/contacto" },
+      { label: "Noticias", href: "/blog" },
       { label: "Aviso de privacidad", href: "/aviso-de-privacidad" },
       { label: "Términos", href: "/terminos" },
-      { label: "SIPRES", href: "/#transparencia" },
     ],
   },
 ];
@@ -81,16 +87,24 @@ export const footerGroups = [
     title: "Empresa",
     links: [
       { label: "Nosotros", href: "/#nosotros" },
-      { label: "Grupo Salomón", href: "/#grupo" },
-      { label: "Historias", href: "/#historias" },
+      { label: "Visión", href: "/#vision" },
+      { label: "Grupo Salomón", href: "/#respaldo" },
     ],
   },
   {
-    title: "Inversión",
+    title: "Oferta",
     links: [
+      { label: "Soluciones", href: "/soluciones" },
+      { label: "Modelo", href: "/modelo" },
+      { label: "Financiamiento", href: "/evaluacion" },
+    ],
+  },
+  {
+    title: "Capital",
+    links: [
+      { label: "Oportunidades", href: "/capital" },
       { label: "Proyectos", href: "/#proyectos" },
-      { label: "Transparencia", href: "/#transparencia" },
-      { label: "Evaluación", href: "/evaluacion" },
+      { label: "Contacto capital", href: "/capital/contacto" },
     ],
   },
   {
@@ -98,7 +112,7 @@ export const footerGroups = [
     links: [
       { label: "Aviso de privacidad", href: "/aviso-de-privacidad" },
       { label: "Términos", href: "/terminos" },
-      { label: "SIPRES", href: "/#transparencia" },
+      { label: "Permisos", href: "/#respaldo" },
     ],
   },
 ] as const;

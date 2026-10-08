@@ -26,24 +26,19 @@ export default async function ProjectPage({
         <h1 className="font-heading mt-3 text-4xl text-ink md:text-6xl">{project.name}</h1>
         <p className="mt-4 text-sm text-ink/55">{project.location}</p>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
-            ["Unidades", project.units],
-            ["Costo", project.cost],
-            ["Venta proyectada", project.projected],
+            ["Sector", project.sector],
+            ["Ubicación", project.location],
+            ["Monto", project.amount],
+            ["Estatus", project.status],
+            ["Tipo de participación", project.participation],
           ].map(([label, value]) => (
             <div key={label} className="rounded-2xl bg-white p-5">
               <p className="text-xs tracking-[0.16em] uppercase text-ink/40">{label}</p>
               <p className="font-heading mt-2 text-2xl">{value}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-8">
-          <div className="h-1 overflow-hidden rounded-full bg-mist">
-            <div className="h-full bg-gradient-brand" style={{ width: `${project.progress}%` }} />
-          </div>
-          <p className="mt-2 text-xs text-ink/45">Avance placeholder · {project.progress}%</p>
         </div>
 
         <div className="mt-12">
@@ -58,7 +53,7 @@ export default async function ProjectPage({
 
         <div className="mt-12 max-w-2xl space-y-4">
           <PlaceholderText>
-            Descripción placeholder del proyecto. Aquí se detalla ubicación, unidades y el estado de obra.
+            Descripción placeholder del proyecto. Aquí se detalla sector, ubicación, monto y el tipo de participación.
           </PlaceholderText>
           <PlaceholderText>
             Segundo bloque placeholder. Sin cifras reales ni documentos descargables en esta propuesta.
@@ -67,10 +62,10 @@ export default async function ProjectPage({
 
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/evaluacion" className="rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper">
-            Solicitar información
+            Solicitar financiamiento
           </Link>
-          <Link href="/#proyectos" className="rounded-full border border-ink/15 px-5 py-3 text-sm font-medium">
-            Volver a proyectos
+          <Link href="/capital/contacto" className="rounded-full border border-ink/15 px-5 py-3 text-sm font-medium">
+            Contacto para capital
           </Link>
         </div>
       </article>
